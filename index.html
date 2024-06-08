@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        #gallery .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        #gallery .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section id="home">
+        <h1>Dobrodošli na stranicu</h1>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="grid-container">
+            <div class="grid-item"><img src="pic1.jpg"></div>
+            <div class="grid-item"><img src="pic2.jpg"></div>
+            <div class="grid-item"><img src="pic3.jpg"></div>
+            <div class="grid-item"><img src="pic4.jpg"></div>
+        </div>
+    </section>
+</body>
+</html>
